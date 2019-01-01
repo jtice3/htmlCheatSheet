@@ -1,0 +1,75 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Web Design Cheat Sheet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <a href="blog.html">Go to blog</a>
+    <hr>
+    <h1>
+        <c>Heading for the page!</c>        
+    </h1>
+
+    <!-- type lorem or lorem10 to generate random words-->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat alias nostrum, neque esse repudiandae officiis, obcaecati totam voluptatibus laborum molestiae dolorem modi est voluptas iste earum distinctio debitis eos! Temporibus?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque optio nemo ipsa dignissimos voluptatum minima aspernatur. Voluptate ipsam delectus tempore quaerat distinctio doloribus reiciendis ad eveniet natus perferendis ratione quia sapiente at, alias eos ea error nesciunt illo dolore qui quas suscipit. Quaerat harum dicta aliquid. Exercitationem libero, distinctio excepturi cupiditate doloremque error amet nihil suscipit id dolor fugit sint officia voluptatem consequuntur illum quisquam modi quaerat in nostrum repudiandae. Soluta vero debitis, enim sequi a ad neque vel autem esse ipsa error magnam itaque magni earum, amet commodi, architecto labore. Incidunt consequatur molestiae rem dicta odit. Adipisci, consequatur tenetur.
+    </p>
+
+    <!-- Forms -->
+    <form action="process.php" method="POST">
+        <div>
+            <label>First Name</label>
+            <input type="text" name="firstName" placeholder="Enter first name">
+        </div>
+        <br>
+        <div>
+            <label>Last Name</label>
+            <input type="text" name="lastName" placeholder="Enter last name">
+        </div>
+        <br>
+        <div>
+            <label>Email</label>
+            <input type="email" name"email"> <!-- email validation w/o JS -->
+        </div>
+        <br>
+        <div>
+            <label>Message</label>
+            <textarea name="message"></textarea>
+        </div>
+        <br>
+        <div>
+            <label>Gender</label>
+            <select name="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label>Age:</label>
+            <input type="number" name="age" value="30">
+        </div>
+        <br>
+        <div>
+            <label>Birthday:</label>
+            <input type="date" name="birthday">
+        </div>
+        <br>
+        <input type="submit" name="submit" value="Submit">
+    </form>
+
+    <!-- Button -->
+    <button click="someFunction">Click Me</button> <!-- JS uses click event for functionality -->
+
+    <div style="margin-top:500px"></div>
+</body>
+

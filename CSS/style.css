@@ -1,0 +1,165 @@
+body {
+    background-color:#f4f4f4;
+    color:#555555;
+
+    font-family: Arial, Helvetica, sans-sarif;
+    font-size:16px;
+    font-weight:normal;
+    /*Same as above * 
+    font: normal 16px Arial, Helvetica, sans-sarif;*/
+    line-height:1.5em;
+    margin:0;
+}
+
+.container {
+    width:80%;
+    margin:auto; /*moves container to the middle*/
+    overflow:hidden; /*if something goes outside of a div, it eliminates a scrollbar appearing*/
+}
+
+.clearFix {
+    clear:both; /*This clears any floats above it*/
+}
+
+.post {
+    background-color:#333333;
+    color:#ffffff;
+    border:5px blueviolet solid;
+
+    padding-top:20px; /*only applies to top*/
+    padding:20px; /* all 4 sides */
+}
+
+.post h3 {
+    font-family-Tahoma;
+    font-style:italic;
+    text-decoration:underline;
+    Letter-spacing: 0.1em;
+}
+
+p {
+    margin:10px 15px;
+}
+
+.categories {
+    border:1px #ccc solid;
+    padding:10px;
+    border-radius:15px;
+}
+
+.categories ul {
+    list-style:square;
+    List-style-image: url('../images/check.png');
+}
+
+.categories li {
+    padding-bottom:4px;
+    border-bottom:dotted 1px #333;
+}
+
+a:hover {
+    color:red;
+}
+
+a:visited {
+    color:purple;
+}
+
+.my-form {
+    padding:20px;
+
+}
+
+.my-form .form-group {
+    padding-bottom:15px;
+}
+
+.my-form label {
+    display:block; /* form default is in-line, so we changed it to block so there's a new line */
+}
+
+.my-form input[type="text"], .my-form textarea{ /*selects the type of input element, otherwise buttons would also be 100% of container */
+    padding:8px;
+    width:100%; /* width is 100% size of its container */
+}
+
+.my-form input[type="submit"] {
+    background-color:#333;
+    color:#fff;
+    padding:10px 15px;
+    border:none;
+}
+
+.button:hover {
+    background:red;
+    color:#fff;
+}
+
+.block {
+    float:left;
+    width:33.3%;
+    border:1px solid #ccc;
+    padding:10px;
+    box-sizing:border-box;  /*This helps if you're trying to fit multiple things on a line. It takes into account the border, padding, etc and puts that into the 33.3%. */
+}
+
+#main-block { /*IDs use "#" */
+    float:left;
+    width:70%;
+    padding:15px;
+    box-sizing: border-box;
+}
+
+#sidebar { 
+    float:right;
+    width:30%;
+    background-color:#333;
+    color:#fff;
+    padding:15px;
+    box-sizing: border-box;
+}
+
+.p-box {
+    width:800px;
+    height:500px;
+    border:1px solid #000;
+    margin-top:30px;
+    position:relative; /* If we don't set to relative, the position: absolute on h1 would be 40px from the top of the entire html doc */
+    background-image:url(../images/abstract-light.jpg);
+    background-repeat:no-repeat;
+    background-size: 100%;
+
+}
+
+.p-box h1 {
+    position: absolute;
+    top:40px;
+}
+
+.p-box h2 {
+    position:absolute;
+    bottom:40px;
+    right:100px;
+}
+
+.fix-me {
+    position:fixed;
+    top:400px;
+}
+
+.myList li:first-child{ /*Using a pseudo-class */
+    background:red; 
+}
+
+.myList li:last-child{ 
+    background:blue; 
+}
+
+.myList li:nth-child(5){ 
+    background:yellow; 
+}
+
+.myList li:nth-child(even){ 
+    background:rgb(0, 255, 13); 
+}
+
